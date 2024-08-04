@@ -71,7 +71,7 @@ export default function LoginForm() {
 
 function LoginButton() {
     const { pending } = useFormStatus()
-    const handleClick = (event) => {
+    const handleClick = (event: React.MouseEvent<HTMLElement>) => {
         if (pending) {
           event.preventDefault()
         }
